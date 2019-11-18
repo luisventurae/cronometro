@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+}
+#app {
+  background: #eee;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+}
+#app header h1 {
+  text-align: center;
+  font-weight: 100;
+}
+#app .title {
+  text-align: center;
+}
+#app .body .form .timer {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  max-width: max-content;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+#app .body .form .timer .grid-item {
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+}
+#app .body .form .timer .grid-item.description {
+  font-size: 12px;
+}
+#app .body .form .buttons {
+  margin: 0 auto;
+  text-align: center;
+}

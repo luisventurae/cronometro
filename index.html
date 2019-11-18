@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Cronómetro Online- lv</title>
+        <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+    <body>
+        <div id="app" ref="app" class="container">
+            <div class="title row">
+                <div class="col s12">
+                    <span>Cronómetro Online</span>
+                </div>
+            </div>
+            <div class="body">
+                <div class="form">
+                    <div class="timer">
+                        <div class="grid-item">
+                            <span>{{ formatedHours }}</span><span>:</span>
+                        </div>
+                        <div class="grid-item">
+                            <span>{{ formatedMinutes }}</span><span>:</span>
+                        </div>
+                        <div class="grid-item">
+                            <span>{{ formatedSeconds }}</span><span>:</span>
+                        </div>
+                        <div class="grid-item">
+                            <span>{{ formatedHundredths }}</span>
+                        </div>
+                        <div class="grid-item description">
+                            <span>Horas</span>
+                        </div>
+                        <div class="grid-item description">
+                            <span>Minutos</span>
+                        </div>
+                        <div class="grid-item description">
+                            <span>Segundos</span>
+                        </div>
+                        <div class="grid-item description">
+                            <span>Centésimas</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s4"></div>
+                        <div class="col s4">
+                            <div class="buttons">
+                                <button @click="startChronometer()" class="btn-floating btnwaves-effect waves-light red" title="Iniciar">
+                                    <i class="material-icons">play_arrow</i>
+                                </button>
+                                <button @click="pauseChronometer()" class="waves-effect waves-light btn red darken-4" title="Pausar">
+                                    <i class="material-icons">pause</i>
+                                </button>
+                                <button @click="stopChronometer()" class="waves-effect waves-light btn red darken-4" title="Detener">
+                                    <i class="material-icons">stop</i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col s4"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>
