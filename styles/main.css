@@ -37,8 +37,23 @@ h4 {
 }
 #app .body .form .timer .grid-item {
   text-align: center;
-  font-size: 80px;
   font-weight: 100;
+  font-size: 120px;
+}
+@media screen and (max-width: 950px) {
+  #app .body .form .timer .grid-item {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 650px) {
+  #app .body .form .timer .grid-item {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 350px) {
+  #app .body .form .timer .grid-item {
+    font-size: 30px;
+  }
 }
 #app .body .form .timer .grid-item.description {
   font-size: 12px;
