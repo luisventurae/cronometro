@@ -22,6 +22,11 @@ h4 {
 #app .title {
   text-align: center;
 }
+#app .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #app .body .form .timer {
   display: grid;
   grid-template-columns: auto auto auto auto;

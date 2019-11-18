@@ -47,6 +47,10 @@ var app = new Vue({
             this.playing = false
         },
         stopChronometer: function() {
+            this.hours = 0
+            this.minutes = 0
+            this.seconds = 0
+            this.hundredths = 0
             this.playing = false
         },
         increase: function() {

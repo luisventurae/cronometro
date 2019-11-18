@@ -12,13 +12,13 @@
     </head>
     <body>
         <div id="app" ref="app" class="container">
-            <div class="title row">
-                <div class="col s12">
-                    <span>Cronómetro Online</span>
-                </div>
-            </div>
             <div class="body">
                 <div class="form">
+                    <div class="title row">
+                        <div class="col s12">
+                            <span>Cronómetro Online</span>
+                        </div>
+                    </div>
                     <div class="timer">
                         <div class="grid-item">
                             <span>{{ formatedHours }}</span><span>:</span>
@@ -46,21 +46,19 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col s4"></div>
-                        <div class="col s4">
+                        <div class="col s12">
                             <div class="buttons">
-                                <button @click="startChronometer()" class="btn-floating btnwaves-effect waves-light red" title="Iniciar">
+                                <button @click="startChronometer()" class="btn-floating btnwaves-effect waves-light" :class="{'red': !playing, 'grey lighten-2': playing }" ref="play" title="Iniciar">
                                     <i class="material-icons">play_arrow</i>
                                 </button>
-                                <button @click="pauseChronometer()" class="waves-effect waves-light btn red darken-4" title="Pausar">
+                                <button @click="pauseChronometer()" class="waves-effect waves-light btn" :class="{'red darken-4': playing, 'grey lighten-2': !playing }" ref="pause" title="Pausar">
                                     <i class="material-icons">pause</i>
                                 </button>
-                                <button @click="stopChronometer()" class="waves-effect waves-light btn red darken-4" title="Detener">
+                                <button @click="stopChronometer()" class="waves-effect waves-light btn red darken-4" ref="stop" title="Detener">
                                     <i class="material-icons">stop</i>
                                 </button>
                             </div>
                         </div>
-                        <div class="col s4"></div>
                     </div>
                 </div>
             </div>
