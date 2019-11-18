@@ -10,7 +10,7 @@ var app = new Vue({
         playing: false,
     },
     mounted: function() {
-        this.$refs.app.style.display = 'block'
+        this.$refs.app.style.display = 'flex'
         this.defineChronometer()
     },
     computed: {

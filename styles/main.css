@@ -21,6 +21,7 @@ h4 {
 }
 #app .title {
   text-align: center;
+  margin: 0px;
 }
 #app .body {
   display: flex;
