@@ -1,5 +1,6 @@
 {
     "name": "Cronometro",
     "version": "1.0.0",
-    "author": "Luis Ventura <https://www.linkedin.com/in/luisventurae/>"
+    "author": "Luis Ventura <https://www.linkedin.com/in/luisventurae/>",
+    "license": "MIT"
 }

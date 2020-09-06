@@ -39,6 +39,7 @@ h4 {
   text-align: center;
   font-weight: 100;
   font-size: 120px;
+  width: 150px;
 }
 @media screen and (max-width: 950px) {
   #app .body .form .timer .grid-item {
