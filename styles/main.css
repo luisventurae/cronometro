@@ -44,16 +44,19 @@ h4 {
 @media screen and (max-width: 950px) {
   #app .body .form .timer .grid-item {
     font-size: 80px;
+    width: 110px;
   }
 }
 @media screen and (max-width: 650px) {
   #app .body .form .timer .grid-item {
     font-size: 50px;
+    width: 70px;
   }
 }
 @media screen and (max-width: 350px) {
   #app .body .form .timer .grid-item {
     font-size: 30px;
+    width: 60px;
   }
 }
 #app .body .form .timer .grid-item.description {
